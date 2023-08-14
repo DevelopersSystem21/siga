@@ -1,0 +1,7 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/app/cursos/notas/index.js": "/js/app/cursos/notas/index.js",
+    "/js/app/cursos/notas/edit.js": "/js/app/cursos/notas/edit.js",
+    "/js/app/cursos/asistencia/edit.js": "/js/app/cursos/asistencia/edit.js",
+    "/js/app/cursos/horarios/index.js": "/js/app/cursos/horarios/index.js"
+}

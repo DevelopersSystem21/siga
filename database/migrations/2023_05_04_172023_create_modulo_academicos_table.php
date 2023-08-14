@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('modulo_academicos', function (Blueprint $table) {
+            $table->uuid("id")->primary();
+            $table->string("nombre");
+            $table->uuid('id_tipo_modulos')->index();
+            $table->foreign('id_tipo_modulos')->references('id')->on('tipo_modulos');
+            $table->uuid('id_programa_academico')->index();
+            $table->foreign('id_programa_academico')->references('id')->on('programa_academicos');
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('modulo_academicos');
+    }
+};

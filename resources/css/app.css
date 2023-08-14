@@ -1,0 +1,6 @@
+.custom-table thead th:hover {
+    /* Estilos personalizados aquí */
+    background-color: #a20808;
+    color: #333;
+    /* Agrega cualquier otro estilo que desees */
+  }
